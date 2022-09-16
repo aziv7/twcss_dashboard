@@ -1,0 +1,8 @@
+body {
+  font-family: 
+    'Tomorrow';
+  
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
