@@ -18,10 +18,15 @@ import News from "../imgs/News.svg";
 import newspaper from "../imgs/newspaper 1.svg";
 
 import iphone from "../imgs/iphone.svg";
+import dots from "../imgs/dots.svg";
+import iphoneTitle from "../imgs/Iphone 6s Plus (1).svg";
+import Active from "../imgs/Active.svg";
+
+import User from "../imgs/Rectangle 643.svg";
 
 const LeftSidebar = () => {
   return (
-    <div className="bg-white w-[281px] h-screen flex px-10   flex-col">
+    <div className="bg-white w-[281px] min-h-screen flex px-10   flex-col">
       <div className="flex flex-row items-center    py-10 space-x-5">
         <div>
           <img src={logo} alt="Logo" />
@@ -102,11 +107,58 @@ const LeftSidebar = () => {
           <img src={ActiveDevice} alt="" />
         </h1>
       </div>
-      <div className="mt-5">
-        <div className="flex items-center justify-around">
-          <div className="bg-[#F3F5FA] w-[64px] h-[64px] flex items-center justify-center">
-            <img src={iphone} alt="" />
+      <div className="mt-10">
+        <div className="flex items-center justify-between">
+          <div className="flex space-x-4">
+            {" "}
+            <div className="bg-[#F3F5FA] w-[64px] h-[64px] flex items-center justify-center">
+              <img src={iphone} alt="" />
+            </div>
+            <div className="flex flex-col  justify-center space-y-3">
+              <div>
+                <img src={iphoneTitle} alt="" />
+              </div>
+
+              <div className="flex space-x-2">
+                <div className="w-[7px] h-[7px] rounded-full bg-[#3ECD7B]"></div>{" "}
+                <img src={Active} alt="" />
+              </div>
+            </div>
           </div>
+          <div>
+            <img src={dots} alt="" />
+          </div>
+        </div>
+      </div>
+      <div className="mt-10">
+        <div className="flex items-center justify-between">
+          <div className="flex space-x-4">
+            {" "}
+            <div className="bg-[#F3F5FA] w-[64px] h-[64px] flex items-center justify-center">
+              <img src={iphone} alt="" />
+            </div>
+            <div className="flex flex-col  justify-center space-y-3">
+              <div>
+                <img src={iphoneTitle} alt="" />
+              </div>
+
+              <div className="flex space-x-2">
+                <div className="w-[7px] h-[7px] rounded-full bg-[#3ECD7B]"></div>{" "}
+                <img src={Active} alt="" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src={dots} alt="" />
+          </div>
+        </div>
+      </div>
+      <div className="mt-10">
+        <div className="ml-3">
+          <div className="hover:ring-2 cursor-pointer rounded-md flex items-center justify-center h-[50px] w-[50px] ring-blue-300">
+            {" "}
+            <img className="rounded-md " src={User} alt="" />
+          </div>{" "}
         </div>
       </div>
     </div>
